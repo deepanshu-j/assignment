@@ -10,7 +10,8 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var cors = require('cors');
 const server = http.createServer(app);
-const { port, URL } = require('./server/config/constants.json');
+const { myPORT, URL } = require('./server/config/constants.json');
+const port = process.env.PORT || myPORT;
 
 app.use('/', router);
 router.use('/api', router);
