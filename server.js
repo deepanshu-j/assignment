@@ -83,5 +83,6 @@ fs.readdirSync(`${__dirname}/server/api`).forEach((file) => {
 	});
 });
 
-module.exports = server.listen(port, 'localhost');
-console.log(`Server started on port ${port} in ${__dirname}`);
+module.exports = server.listen(process.env.PORT || myPORT, () => {
+	console.log(`Server started `);
+});
