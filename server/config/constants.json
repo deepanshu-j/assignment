@@ -1,0 +1,4 @@
+{
+    "port": 4567,
+    "URL": "mongodb+srv://DEEPANSHU:DEEPANSHUJOHAR@cluster0-zxpdy.mongodb.net/jobportal?retryWrites=true&w=majority"
+}
